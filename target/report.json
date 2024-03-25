@@ -1,0 +1,94 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language:pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 606421596,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "\"CT2.3\" - \"Validar Patch\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "que eu verifiquei os dados antigos \"anet.weaver@reqres.in\", \"Janet\" e \"Weaver\" de um usuario 2",
+            "match": {},
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "que eu enviei uma requisição do tipo Patch para alterar dados \"homer.simpson@reqres.in\", \"Homer\" e \"Simpsons\" de um usuario 2",
+            "match": {},
+            "matchedColumns": [
+              2,
+              6,
+              7,
+              8
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "os dado do usuario foram alterados com sucesso",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@CT2.3"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      }
+    ],
+    "name": "Validar requisições Reqres",
+    "description": "",
+    "id": "validar-requisições-reqres",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/users.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@Regressivo"
+      }
+    ]
+  }
+]
