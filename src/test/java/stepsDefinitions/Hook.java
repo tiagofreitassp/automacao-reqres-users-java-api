@@ -13,7 +13,6 @@ public class Hook extends BaseUtil {
 
     @Before
     public void InicializeTest() {
-        base.request = given().header("Accept", "application/json").header("Content-Type", "application/json")
-                .header("TokenPass", "491E26F7-E1D7-4B53-9324-C28C80B41821");
+        base.request = given().header("Accept", "application/json").header("Content-Type", "application/json");
     }
 }

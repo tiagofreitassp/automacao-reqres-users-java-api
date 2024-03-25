@@ -27,19 +27,19 @@ Funcionalidade: Validar requisições Reqres
   @CT2.3
   Esquema do Cenario: "<Cenario>" - "<DescricaoDoCenario>"
     Dado que eu verifiquei os dados antigos "<email>", "<first_name>" e "<last_name>" de um usuario <id>
-    Quando que eu enviei uma requisição do tipo Patch para alterar dados "<new_email>", "<new_first_name>" e "<new_last_name>" de um usuario <id>
+    Quando que eu enviei uma requisição do tipo Patch para alterar dados "<new_email>", "<new_first_name>" e "<new_last_name>" deste usuario <id>
     Entao os dado do usuario foram alterados com sucesso
 
     Exemplos:
       | Cenario | DescricaoDoCenario | id | email                  | first_name | last_name | new_email                | new_first_name | new_last_name |
-      | CT2.3   | Validar Patch      | 2  | anet.weaver@reqres.in  | Janet      | Weaver    | homer.simpson@reqres.in  | Homer          | Simpsons      |
+      | CT2.3   | Validar Patch      | 2  | janet.weaver@reqres.in | Janet      | Weaver    | homer.simpson@reqres.in  | Homer          | Simpsons      |
 
 
-#  @CT2.4
-#  Esquema do Cenario: "<Cenario>" - "<DescricaoDoCenario>"
-#    Dado que eu enviei uma requisição do tipo GET para retornar todos os usuarios
-#    Entao a lista de todos os usuarios e retornada com sucesso
-#
-#    Exemplos:
-#      | Cenario | DescricaoDoCenario |
-#      | CT2.4   | Validar Post       |
+  @CT2.4
+  Esquema do Cenario: "<Cenario>" - "<DescricaoDoCenario>"
+    Dado que eu enviei uma requisição do tipo POST para criar um usuario com os dados "<nome>" e "<job>"
+    Entao o cadastro do usuario e criado com sucesso
+
+    Exemplos:
+      | Cenario | DescricaoDoCenario | nome | job       |
+      | CT2.4   | Validar Post       | lisa | developer |

@@ -34,19 +34,26 @@ public class UsersSteps extends BaseUtil {
 
     @Dado("^que eu verifiquei os dados antigos \"([^\"]*)\", \"([^\"]*)\" e \"([^\"]*)\" de um usuario (\\d+)$")
     public void queEuVerifiqueiOsDadosAntigosEDeUmUsuario(String email, String nome, String sobrenome, int id) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        base.verificarOsDadosAntigosEDeUmUsuario(email, nome, sobrenome, id);
     }
 
-    @Quando("^que eu enviei uma requisição do tipo Patch para alterar dados \"([^\"]*)\", \"([^\"]*)\" e \"([^\"]*)\" de um usuario (\\d+)$")
+    @Quando("^que eu enviei uma requisição do tipo Patch para alterar dados \"([^\"]*)\", \"([^\"]*)\" e \"([^\"]*)\" deste usuario (\\d+)$")
     public void queEuEnvieiUmaRequisiçãoDoTipoPatchParaAlterarDadosEDeUmUsuario(String email, String nome, String sobrenome, int id) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        base.enviarRequisicaoDoTipoPatch(email, nome, sobrenome, id);
     }
 
     @Entao("^os dado do usuario foram alterados com sucesso$")
     public void osDadoDoUsuarioForamAlteradosComSucesso() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        base.validarDadosAlteradosPorPatch();
+    }
+
+    @Dado("^que eu enviei uma requisição do tipo POST para criar um usuario com os dados \"([^\"]*)\" e \"([^\"]*)\"$")
+    public void que_eu_enviei_uma_requisição_do_tipo_POST_para_criar_um_usuario_com_os_dados_e(String nome, String profissao) throws Throwable {
+        base.enviarRequisicaoDoTipoPost_CriarUsuario(nome,profissao);
+    }
+
+    @Entao("^o cadastro do usuario e criado com sucesso$")
+    public void o_cadastro_do_usuario_e_criado_com_sucesso() throws Throwable {
+        base.validarDadosAlteradosPorPost();
     }
 }
