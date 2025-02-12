@@ -1,0 +1,512 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language:pt"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1013222900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "\"CT2.1\" - \"Validar Get List Users\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1759896200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que eu enviei uma requisição do tipo GET para retornar todos os usuarios",
+            "match": {
+              "location": "UsersSteps.queEuEnvieiUmaRequisiçãoDoTipoGETParaRetornarTodosOsUsuarios()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 40011500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a lista de todos os usuarios e retornada com sucesso",
+            "match": {
+              "location": "UsersSteps.aListaDeTodosOsUsuariosERetornadaComSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@CT2.1"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11858100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "\"CT2.2\" - \"Validar Get Single User\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 488898100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que eu enviei uma requisição do tipo GET para retornar os daos pelo 7 de um usuario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 68
+                }
+              ],
+              "location": "UsersSteps.queEuEnvieiUmaRequisiçãoDoTipoGETParaRetornarOsDaosPeloDeUmUsuario(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 924742400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "os dados \"michael.lawson@reqres.in\", \"Michael\" e \"Lawson\" são retornadas com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "michael.lawson@reqres.in",
+                  "offset": 10
+                },
+                {
+                  "val": "Michael",
+                  "offset": 38
+                },
+                {
+                  "val": "Lawson",
+                  "offset": 50
+                }
+              ],
+              "location": "UsersSteps.osDadosESãoRetornadasComSucesso(String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@CT2.2"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 664800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "\"CT2.2\" - \"Validar Get Single User\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 482193400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que eu enviei uma requisição do tipo GET para retornar os daos pelo 12 de um usuario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 68
+                }
+              ],
+              "location": "UsersSteps.queEuEnvieiUmaRequisiçãoDoTipoGETParaRetornarOsDaosPeloDeUmUsuario(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 41173300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "os dados \"rachel.howell@reqres.in\", \"Rachel\" e \"Howell\" são retornadas com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rachel.howell@reqres.in",
+                  "offset": 10
+                },
+                {
+                  "val": "Rachel",
+                  "offset": 37
+                },
+                {
+                  "val": "Howell",
+                  "offset": 48
+                }
+              ],
+              "location": "UsersSteps.osDadosESãoRetornadasComSucesso(String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@CT2.2"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2021400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "\"CT2.2\" - \"Validar Get Single User\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;4",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 471478000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "que eu enviei uma requisição do tipo GET para retornar os daos pelo 10 de um usuario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 68
+                }
+              ],
+              "location": "UsersSteps.queEuEnvieiUmaRequisiçãoDoTipoGETParaRetornarOsDaosPeloDeUmUsuario(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 67233500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "os dados \"byron.fields@reqres.in\", \"Byron\" e \"Fields\" são retornadas com sucesso",
+            "match": {
+              "arguments": [
+                {
+                  "val": "byron.fields@reqres.in",
+                  "offset": 10
+                },
+                {
+                  "val": "Byron",
+                  "offset": 36
+                },
+                {
+                  "val": "Fields",
+                  "offset": 46
+                }
+              ],
+              "location": "UsersSteps.osDadosESãoRetornadasComSucesso(String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@CT2.2"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 452500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "\"CT2.3\" - \"Validar Patch\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 146366900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "que eu verifiquei os dados antigos \"janet.weaver@reqres.in\", \"Janet\" e \"Weaver\" de um usuario 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "janet.weaver@reqres.in",
+                  "offset": 36
+                },
+                {
+                  "val": "Janet",
+                  "offset": 62
+                },
+                {
+                  "val": "Weaver",
+                  "offset": 72
+                },
+                {
+                  "val": "2",
+                  "offset": 94
+                }
+              ],
+              "location": "UsersSteps.queEuVerifiqueiOsDadosAntigosEDeUmUsuario(String,String,String,int)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 522325300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "que eu enviei uma requisição do tipo Patch para alterar dados \"homer.simpson@reqres.in\", \"Homer\" e \"Simpsons\" deste usuario 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "homer.simpson@reqres.in",
+                  "offset": 63
+                },
+                {
+                  "val": "Homer",
+                  "offset": 90
+                },
+                {
+                  "val": "Simpsons",
+                  "offset": 100
+                },
+                {
+                  "val": "2",
+                  "offset": 124
+                }
+              ],
+              "location": "UsersSteps.queEuEnvieiUmaRequisiçãoDoTipoPatchParaAlterarDadosEDeUmUsuario(String,String,String,int)"
+            },
+            "matchedColumns": [
+              2,
+              6,
+              7,
+              8
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 57572300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "os dado do usuario foram alterados com sucesso",
+            "match": {
+              "location": "UsersSteps.osDadoDoUsuarioForamAlteradosComSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@CT2.3"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 812500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InicializeTest()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "\"CT2.4\" - \"Validar Post\"",
+        "description": "",
+        "id": "validar-requisições-reqres;\"\u003ccenario\u003e\"---\"\u003cdescricaodocenario\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 260300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "que eu enviei uma requisição do tipo POST para criar um usuario com os dados \"lisa\" e \"developer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lisa",
+                  "offset": 78
+                },
+                {
+                  "val": "developer",
+                  "offset": 87
+                }
+              ],
+              "location": "UsersSteps.que_eu_enviei_uma_requisição_do_tipo_POST_para_criar_um_usuario_com_os_dados_e(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 529503500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "o cadastro do usuario e criado com sucesso",
+            "match": {
+              "location": "UsersSteps.o_cadastro_do_usuario_e_criado_com_sucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@CT2.4"
+          },
+          {
+            "line": 3,
+            "name": "@Regressivo"
+          }
+        ]
+      }
+    ],
+    "name": "Validar requisições Reqres",
+    "description": "",
+    "id": "validar-requisições-reqres",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/users.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@Regressivo"
+      }
+    ]
+  }
+]
