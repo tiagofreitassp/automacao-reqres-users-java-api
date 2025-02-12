@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+DS_Store
+.DS_Store
+./DS_Store
+/DS_Store
+.target
+./target
+target
